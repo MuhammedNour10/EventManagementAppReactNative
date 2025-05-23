@@ -1,50 +1,47 @@
-# Welcome to your Expo app 👋
+📱 EventManagement Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+EventManagement is a cross-platform React Native mobile application designed to interact with the EventManagement Web API. It allows users to browse, register, and manage events easily from their mobile devices.
 
-## Get started
+🚀 Features
 
-1. Install dependencies
+🔐 User Authentication (Login/Register)
+📅 View Upcoming Events
+➕ Register for Events
+🧾 My Events Section
+🗓️ Create and Manage Events (Admin-only)
+📡 API Integration with ASP.NET Core Web API
 
-   ```bash
-   npm install
-   ```
+🛠️ Tech Stack
 
-2. Start the app
+Framework: React Native
+Language: JavaScript / TypeScript (edit as applicable)
+Navigation: React Navigation
+API Client: Axios
+Authentication: JWT Token with Secure Storage
+State Management: UseState Context API
+Form Handling: Formik + Yup
+UI Library: React Native Paper / NativeBase / Tailwind (choose yours)
 
-   ```bash
-    npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
+📱 Screenshots
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+| Login                                  | Events List                            | Event Detail                            |
+| -------------------------------------- | -------------------------------------- | --------------------------------------- |
+| ![Login Screen](screenshots/login.png) | ![Events List](screenshots/events.png) | ![Event Detail](screenshots/detail.png) |
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
 
-When you're ready, run:
 
-```bash
-npm run reset-project
-```
+⚙️ Getting Started
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Prerequisites
+Node.js
+Expo CLI or React Native CLI
+Android Studio / Xcode for emulators
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+🔐 Authentication
 
-## Join the community
+Uses JWT tokens stored securely (e.g., AsyncStorage or SecureStore). Token is added to all authorized requests.
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
