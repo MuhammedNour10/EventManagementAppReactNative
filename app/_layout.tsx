@@ -1,39 +1,37 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from "@react-navigation/native";
+import LoginScreen from "./(tabs)/screens/LoginScreen";
+import RegisterScreen from "./(tabs)/screens/RegisterScreen";
+import DashboardScreen from "./(tabs)/screens/DashboardScreen";
+import EventDetailScreen from "./(tabs)/screens/EventDetailScreen";
+import HomeScreen from "./(tabs)/screens/HomeScreen";
+import EventEditScreen from "./(tabs)/screens/EditEventScreen";
+import CreateEventScreen from "./(tabs)/screens/CreateEventScreen";
+import AttendanceScreen from "./(tabs)/screens/AttendanceScreen";
 
-import { useColorScheme } from '@/hooks/useColorScheme';
+const Stack = createStackNavigator();
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync();
-
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
-
-  useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
-
-  if (!loaded) {
-    return null;
-  }
-
+const AppNavigator = () => {
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Stack.Navigator screenOptions={{ headerShown: true }}>
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Login" component={LoginScreen} />
+      <Stack.Screen name="Register" component={RegisterScreen} />
+      <Stack.Screen name="Dashboard" component={DashboardScreen} />
+      <Stack.Screen name="EventDetailScreen" component={EventDetailScreen} />
+      <Stack.Screen name="AttendanceScreen" component={AttendanceScreen} />
+      <Stack.Screen name="EventEditScreen" component={EventEditScreen} />
+      <Stack.Screen name="CreateEventScreen" component={CreateEventScreen}/>
+    </Stack.Navigator>
+  );
+};
+
+export default function App() {
+  return (
+    
+   
+      <AppNavigator />
+    
   );
 }
