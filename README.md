@@ -26,9 +26,11 @@ UI Library: React Native Paper / NativeBase / Tailwind (choose yours)
 📱 Screenshots
 
 
-Loogin ![Events List](![Simulator Screenshot - iPhone 15 Pro Max - 2025-05-23 at 14 52 21](https://github.com/user-attachments/assets/35cf8604-83b5-48b3-8bbd-ec9b174965ca)
+Login:![Simulator Screenshot - iPhone 15 Pro Max - 2025-05-23 at 14 57 24](https://github.com/user-attachments/assets/6db7e360-bfd5-4d2f-9e00-b32a91a7a46a)
 
-Register:[Simulator Screenshot - iPhone 15 Pro Max - 2025-05-23 at 14 53 00](https://github.com/user-attachments/assets/9180ed87-ea1b-40b8-9604-42b070b8355e)
+Rigester:![Simulator Screenshot - iPhone 15 Pro Max - 2025-05-23 at 14 57 47](https://github.com/user-attachments/assets/bcf57197-e62b-44f9-bcb9-8a4ef0bcc01f)
+
+
 
 EventDetails:![Simulator Screenshot - iPhone 15 Pro Max - 2025-05-23 at 14 55 42](https://github.com/user-attachments/assets/d2599eb1-93bb-4c92-8df6-b5758ada9320)
 
